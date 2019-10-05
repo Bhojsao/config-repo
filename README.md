@@ -1,1 +1,1 @@
-# config-repo
+# This project contains all configuration file
