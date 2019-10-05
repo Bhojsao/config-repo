@@ -1,0 +1,22 @@
+server:
+  port: 9090
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+
+spring:
+  application:
+    name: ZuulGatway
+
+zuul:
+  routes:
+    SpringBootEnvers :
+      path : /parcel/**
+      url : http://localhost:8012/SpringBootEnvers/parcel
+    SpringBootFlyway :
+      path : /channel/**
+      url : http://localhost:8011/SpringBootFlyway/channel
+      
+
