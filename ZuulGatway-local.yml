@@ -12,11 +12,14 @@ spring:
 
 zuul:
   routes:
-    SpringBootEnvers :
-      path : /parcel/**
-      url : http://localhost:8012/SpringBootEnvers/parcel
     SpringBootFlyway :
       path : /channel/**
       url : http://localhost:8011/SpringBootFlyway/channel
+    SpringBootEnvers :
+      path : /parcel/**
+      url : http://localhost:8012/SpringBootEnvers/parcel
+    AuthService :
+      path : /auth/**
+      url : http://localhost:8013/AuthService/auth
       
 
