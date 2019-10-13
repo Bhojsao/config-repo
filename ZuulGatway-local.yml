@@ -21,5 +21,8 @@ zuul:
     AuthService :
       path : /auth/**
       url : http://localhost:8013/AuthService/auth
+    SearchService :
+      path : /search/**
+      url : http://localhost:8014/SearchService/search
       
 
